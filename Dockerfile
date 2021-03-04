@@ -3,9 +3,7 @@ FROM node
 WORKDIR /myangularapp
 
 COPY . .
-
-RUN npm install
-RUN npm install -g @angular/cli
+RUN npm install -g http-server
 
 EXPOSE 4200
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["http-server", "--port", "9999"]
