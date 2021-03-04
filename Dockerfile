@@ -5,5 +5,5 @@ WORKDIR /myangularapp
 COPY . .
 RUN npm install -g http-server
 
-EXPOSE 4200
+EXPOSE 9999
 CMD ["http-server", "--port", "9999"]
